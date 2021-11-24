@@ -7,74 +7,81 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/et_codigo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/codigo"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_descripcion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/descripcion"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/et_codigo" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/et_precio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/precio"
         android:inputType="numberDecimal"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/et_descripcion" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_nuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/btn_alta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@+id/et_precio" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_borrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        android:layout_marginStart="8dp"
+        android:text="@string/btn_borrar"
+        app:layout_constraintStart_toEndOf="@+id/btn_nuevo"
+        app:layout_constraintTop_toBottomOf="@+id/et_precio" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        android:layout_marginStart="8dp"
+        android:text="@string/btn_editar"
+        app:layout_constraintStart_toEndOf="@+id/btn_borrar"
+        app:layout_constraintTop_toBottomOf="@+id/et_precio" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_buscar_codigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/btn_buscar_codigo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_nuevo" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_buscar_descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:layout_marginStart="8dp"
+        android:text="@string/btn_buscar_descripcion"
+        app:layout_constraintStart_toEndOf="@+id/btn_buscar_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_borrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
