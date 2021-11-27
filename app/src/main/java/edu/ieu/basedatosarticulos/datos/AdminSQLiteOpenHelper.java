@@ -7,10 +7,16 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
-    private static final String CREATE_TABLE_SQL = "CREATE TABLE ARTICULOS(" +
-            "codigo int primary key," +
-            "descripcion text," +
-            "precio real);";
+    public static final String CODIGO = "codigo";
+    public static final String DESCRIPCION = "descripcion";
+    public static final String PRECIO = "precio";
+    public static final String TABLA = "articulos";
+    public static final String BASE_DATOS = "administracion";
+
+    private static final String CREATE_TABLE_SQL = "CREATE TABLE "+TABLA+"(" +
+             CODIGO +" int primary key," +
+             DESCRIPCION + " text," +
+             PRECIO + " real);";
 
 
     public AdminSQLiteOpenHelper(@Nullable Context context, @Nullable String name) {

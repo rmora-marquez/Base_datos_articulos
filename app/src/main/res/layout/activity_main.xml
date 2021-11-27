@@ -84,4 +84,14 @@
         android:text="@string/btn_buscar_descripcion"
         app:layout_constraintStart_toEndOf="@+id/btn_buscar_codigo"
         app:layout_constraintTop_toBottomOf="@+id/btn_borrar" />
+
+    <ListView
+        android:id="@+id/list_articulos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_codigo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
